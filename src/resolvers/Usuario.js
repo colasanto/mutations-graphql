@@ -2,8 +2,8 @@ import { perfis } from '../data/db'
 
 export default {
   idade(parent) {
-    var diferencaEmMs = Date.now() - new Date(parent.nascimento).getTime()
-    var nascimento = new Date(diferencaEmMs)
+    const diferencaEmMs = Date.now() - new Date(parent.nascimento).getTime()
+    const nascimento = new Date(diferencaEmMs)
     return Math.abs(nascimento.getUTCFullYear() - 1970)
   },
 

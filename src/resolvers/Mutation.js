@@ -1,10 +1,18 @@
 import { usuarios, proximoId } from '../data/db'
 
 export default {
-  novoUsuario(_, { nome, email, nascimento, salario, vip, perfil_id, status}) {
+  // { nome, email, nascimento, salario, vip, perfil_id, status}
+  novoUsuario(_, args) {
+    const emailExistente = usuarios
+      .some(user => user.email === args.email)
+
+    if (emailExistente) {
+      throw new Error("E-mail já cadastrado!")
+    }
+
     const novoUsuario = {
       id: proximoId(),
-      nome, email, nascimento, salario, vip, perfil_id, status
+      ...args
     }
 
     usuarios.push(novoUsuario)

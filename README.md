@@ -11,7 +11,7 @@
 #### Tópicos abordados
 
 - [x] Entendendo as mutations
-- [ ] Validando email para evitar duplicidades
+- [x] Validando email para evitar duplicidades
 - [ ] Mutation para excluir
 - [ ] Mutation para editar
 - [ ] Utilizando Input
