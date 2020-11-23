@@ -1,6 +1,12 @@
 import { perfis } from '../data/db'
 
 export default {
+  idade(parent) {
+    var diferencaEmMs = Date.now() - new Date(parent.nascimento).getTime()
+    var nascimento = new Date(diferencaEmMs)
+    return Math.abs(nascimento.getUTCFullYear() - 1970)
+  },
+
   salario(parent) {
     return parent.salario_real 
       ? parent.salario_real 

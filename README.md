@@ -10,7 +10,7 @@
 
 #### Tópicos abordados
 
-- [ ] Entendendo as mutations
+- [x] Entendendo as mutations
 - [ ] Validando email para evitar duplicidades
 - [ ] Mutation para excluir
 - [ ] Mutation para editar

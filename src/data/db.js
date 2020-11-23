@@ -1,29 +1,34 @@
+let id = 1
+export function proximoId() {
+  return id++
+}
+
 export const usuarios = [
   {
-    id: 1,
+    id: proximoId(),
     nome: 'Fulano da Silva',
     email: 'fulano@gmail.com',
-    idade: 33,
+    nascimento: '1988-08-30T00:00:00.000Z',
     salario: 1420.40,
     vip: false,
     status: 'INATIVO',
     perfil_id: 1
   },
   {
-    id: 2,
+    id: proximoId(),
     nome: 'Ciclano Rodrigues',
     email: 'ciclano@wmail.com',
-    idade: 17,
+    nascimento: '2003-05-17T00:00:00.000Z',
     salario: 5785.10,
     vip: true,
     status: 'BLOQUEADO',
     perfil_id: 1
   },
   {
-    id: 3,
+    id: proximoId(),
     nome: 'Fulana Ciclana',
     email: 'fciclana@tmail.com',
-    idade: 24,
+    nascimento: '1996-03-01T00:00:00.000Z',
     salario: 3700.10,
     vip: true,
     status: 'ATIVO',

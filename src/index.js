@@ -1,4 +1,4 @@
-import { ApolloServer, gql } from 'apollo-server'
+import { ApolloServer } from 'apollo-server'
 import { importSchema } from 'graphql-import'
 import resolvers from './resolvers'
 import path from 'path'
